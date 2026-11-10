@@ -1,0 +1,13 @@
+# One-click deploy on Render (render.com). Set ANTHROPIC_API_KEY in the dashboard.
+services:
+  - type: web
+    name: dispute-desk
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CLAUDE_MODEL
+        value: claude-sonnet-5-5

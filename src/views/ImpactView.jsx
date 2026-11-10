@@ -41,7 +41,7 @@ export default function ImpactView({ stats }) {
     <div className="page">
       <h2>What it's worth to you</h2>
       <p className="lead">
-        These are example numbers, not real Maersk figures. Replace them with yours and the results update as you type.
+        These are example numbers.
       </p>
 
       <div className="fields">

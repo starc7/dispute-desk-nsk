@@ -183,8 +183,8 @@ export default function App() {
       )}
 
       <footer className="foot">
-        Prototype for discussion. Synthetic data, not affiliated with or endorsed by Maersk. The clock is frozen at {fmt(DEMO_TODAY)} so the demo is
-        repeatable.{health.checked && !health.aiConfigured ? " Live AI is off: add ANTHROPIC_API_KEY to the .env file and restart." : ""}
+        Prototype. Synthetic data, not affiliated with or endorsed by Maersk. The clock is frozen at {fmt(DEMO_TODAY)} so the demo is
+        repeatable.{health.checked && !health.aiConfigured ? " Live AI is off: Missing Anthropic API or exhausted the limit " : ""}
       </footer>
     </div>
   );
